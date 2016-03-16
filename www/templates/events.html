@@ -1,0 +1,10 @@
+<ion-view view-title="Agenda">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="event in events" href="#/app/events/{{event.id}}">
+        {{event.summary}}
+        {{event.date}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
